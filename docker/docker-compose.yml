@@ -1,0 +1,12 @@
+services:
+  canal:
+    build: { context: .., dockerfile: docker/Dockerfile }
+    env_file: ../.env
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: secrets/gcp-tts.json
+      YOUTUBE_TOKEN_FILE: secrets/token.json
+    volumes:
+      - ../data:/home/canal/app/data
+      - ../secrets:/home/canal/app/secrets:ro
+    # Lanzado por un systemd timer en el VPS:
+    #   docker compose -f docker/docker-compose.yml run --rm canal

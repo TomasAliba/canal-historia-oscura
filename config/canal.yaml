@@ -1,0 +1,107 @@
+# Configuración del canal. Parametrizable para clonar el sistema a otros nichos o idiomas.
+# Decisiones de la Fase 0 (28/09/2026): docs/fase0-informe.md §9. Arquitectura: docs/arquitectura.md.
+canal:
+  nombre: "El Escribano de Ánimas"
+  handle: "@ElEscribanoDeAnimas"
+  idioma: es
+  mercado_principal: ES
+  mercados: [ES, MX, CO, AR, PE, CL]
+  nicho: "historia oscura, sucesos históricos, leyendas hispanas, misterios"
+  listas_fase3: ["ficción original de terror"]
+
+contenido:
+  antiguedad_minima_anios: 100      # sucesos de antes de (año actual - 100)
+  prohibido: [victimas_infantiles, personas_vivas_identificables, crimenes_recientes]
+
+formato:
+  duracion_min_s: 720               # 12 min
+  duracion_max_s: 1200              # 20 min
+  palabras_min: 1800
+  palabras_max: 3000
+  plantillas: [cronologica, in_media_res, investigacion, testimonio]
+  rotacion_ultimos_n: 5             # no repetir plantilla dentro de los últimos N vídeos (si es posible)
+  short_trailer_s: 45
+  recopilacion_cada_n_videos: 6
+  resolucion: [1920, 1080]
+  fps: 30
+
+produccion:
+  videos_por_semana: 1              # empezar con 1 hasta medir la cuota de Claude Pro
+  dias_publicacion: [viernes]       # con 2/semana: [martes, viernes]
+  hora_publicacion: "19:00"
+  zona_horaria: "Europe/Madrid"
+
+calidad:
+  fuentes_minimas_pct: 100
+  max_riesgo_tono: 3                # 0-10
+  max_similitud: 0.35               # coseno TF-IDF contra guiones anteriores
+  max_desfase_subtitulos_ms: 200
+  max_reintentos: 2
+  fotogramas_qa: 8
+
+# Claude Pro vía `claude -p` (CLAUDE_CODE_OAUTH_TOKEN). Alias de modelo de Claude Code.
+modelos:
+  investigador: sonnet
+  guionista: opus
+  guionista_fallback: sonnet
+  verificador: sonnet
+  filtro_tono: sonnet
+  metadatos: haiku
+  qa: sonnet
+  analista: sonnet
+
+max_turnos:
+  investigador: 40
+  guionista: 6
+  verificador: 8
+  filtro_tono: 6
+  metadatos: 3
+  qa: 4
+
+# Coste 0 €: se controla el uso, no el dinero.
+uso:
+  max_llamadas_claude_por_video: 20
+  max_turnos_claude_por_video: 150
+  max_videos_semana: 1
+  max_caracteres_tts_mes: 900000    # capa gratuita Chirp 3 HD: 1.000.000/mes
+  max_imagenes_ia_dia: 150          # Cloudflare Workers AI gratis ≈ 200/día
+
+voz:
+  proveedor: google                 # google | kokoro | elevenlabs (interfaz común en src/tts.py)
+  idioma: es-ES
+  nombre: es-ES-Chirp3-HD-Charon    # voz grave; elegir definitivamente con muestras en la Fase 2
+  ritmo: 0.92                       # 0.25-2.0
+  pausa_parrafo: "[pause long]"
+
+visuales:
+  fuentes: [wikimedia]              # europeana, bne y loc: Fase 3
+  licencias_permitidas: [PD, CC0, CC-BY, CC-BY-SA]
+  ia:
+    proveedor: cloudflare
+    modelo: "@cf/black-forest-labs/flux-1-schnell"
+    estilo: "grabado antiguo en tinta, claroscuro, textura de papel envejecido, sin fotorrealismo"
+  efectos: {grano: true, vineta: true, ken_burns: true}
+
+audio:
+  carpeta_musica: assets/musica     # cada pista con su entrada en assets/musica/licencias.yaml
+  volumen_musica_db: -22
+  ducking: true
+
+veto:
+  modo: activo                      # activo | pasivo
+  # activo → Environment "aprobacion" (required reviewers)
+  # pasivo → Environment "publicacion-diferida" (wait timer 1440 min)
+  umbral_cambio_pct: 90
+  minimo_videos_para_cambio: 10
+
+calendario:                         # fechas señaladas (MM-DD) → bonus en la ideación
+  Halloween: "10-31"
+  Halloween/Samaín: "10-31"
+  Día de Muertos: "11-02"
+  Día de Difuntos: "11-02"
+  San Juan: "06-24"
+  Semana Santa: movil
+  ventana_dias: 21
+
+notificaciones:
+  canal: telegram

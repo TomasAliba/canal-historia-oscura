@@ -1,0 +1,10 @@
+pyyaml>=6
+pydantic>=2.7
+requests>=2.31
+pillow>=10.1
+google-auth>=2.29
+google-auth-oauthlib>=1.2
+google-api-python-client>=2.130
+tzdata>=2024.1
+pytest>=8
+ruff>=0.6

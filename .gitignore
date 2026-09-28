@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+secrets/
+data/media/
+data/estado/
+data/*.db
+*.tmp
+
+__pycache__/
+.venv/
+.pytest_cache/
+.ruff_cache/
+miniatura_prueba.jpg

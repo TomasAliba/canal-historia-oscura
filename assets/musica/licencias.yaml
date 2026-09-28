@@ -1,0 +1,12 @@
+# Una entrada por pista presente en esta carpeta. Solo música con licencia que permita monetizar en YouTube:
+# - YouTube Audio Library (studio.youtube.com → Biblioteca de audio): marcar si exige atribución.
+# - Kevin MacLeod / incompetech.com (CC-BY 4.0): atribución obligatoria.
+# El pipeline elige una pista por vídeo de forma determinista y añade la atribución a la descripción.
+#
+# - archivo: ambiente_oscuro_01.mp3
+#   titulo: "Nombre de la pista"
+#   autor: "Kevin MacLeod"
+#   licencia: CC-BY
+#   url: https://incompetech.com/...
+#   atribucion: '"Nombre de la pista" — Kevin MacLeod (incompetech.com), CC BY 4.0'
+[]

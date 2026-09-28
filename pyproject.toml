@@ -1,0 +1,31 @@
+[project]
+name = "canal-historia-oscura"
+version = "0.1.0"
+description = "Pipeline autónomo del canal El Escribano de Ánimas"
+requires-python = ">=3.12"
+dependencies = [
+  "pyyaml>=6",
+  "pydantic>=2.7",
+  "requests>=2.31",
+  "pillow>=10.1",
+  "google-auth>=2.29",
+  "google-auth-oauthlib>=1.2",
+  "google-api-python-client>=2.130",
+  "tzdata>=2024.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 115
+target-version = "py312"
+extend-exclude = [".venv", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003", "SIM905"]  # textos en español; listas de palabras con split()
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["ffmpeg: requiere ffmpeg instalado"]

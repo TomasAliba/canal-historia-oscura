@@ -1,0 +1,54 @@
+# Autorreparación: si falla el JOB `producir` (no un rechazo del veto), Claude diagnostica y abre un PR.
+name: Reparar fallo
+on:
+  workflow_run:
+    workflows: ["Producir vídeo"]
+    types: [completed]
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+  id-token: write
+
+jobs:
+  reparar:
+    if: github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    concurrency: { group: estado, cancel-in-progress: false }
+    steps:
+      - name: ¿Falló la producción o fue el veto?
+        id: origen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          conclusion=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}/jobs" \
+            --jq '.jobs[] | select(.name == "producir") | .conclusion')
+          echo "producir=$conclusion" >> "$GITHUB_OUTPUT"
+          echo "Job producir: $conclusion"
+      - uses: actions/checkout@v4
+        if: steps.origen.outputs.producir == 'failure'
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        if: steps.origen.outputs.producir == 'failure'
+        with: { python-version: "3.12", cache: pip }
+      - name: Dependencias
+        if: steps.origen.outputs.producir == 'failure'
+        run: |
+          sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core
+          pip install -r requirements.txt
+      - if: steps.origen.outputs.producir == 'failure'
+        run: scripts/estado.sh restaurar
+      - uses: anthropics/claude-code-action@v1
+        if: steps.origen.outputs.producir == 'failure'
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: "/reparar-fallo"
+          claude_args: "--permission-mode dontAsk --model sonnet --max-turns 80"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - if: always() && steps.origen.outputs.producir == 'failure'
+        run: scripts/estado.sh guardar
