@@ -1,0 +1,51 @@
+rango,slug,titulo_trabajo,pais,tipo,epoca,antiguedad_anios,wiki_es_vistas_12m,yt_busqueda_mediana_vistas,yt_busqueda_top_vistas,yt_videos_100k,demanda,saturacion,documentacion,riesgo_publicitario,calendario,plantilla,prioridad,estado,notas
+1,carlos-ii-hechizado,Carlos II el Hechizado: el exorcismo de un rey,ES,HECHO,1698-1700,326,382223,12987,445231,1,4,1,5,1,,investigacion,9.3,PENDIENTE,Proceso de hechizos documentado (fray Froilán Díaz).
+2,monte-de-las-animas,El Monte de las Ánimas: la noche en que Soria no duerme,ES,LEYENDA,leyenda (Bécquer 1861),165,17738,22416,616976,3,3,2,5,1,Día de Difuntos,testimonio,9.1,PENDIENTE,Obra de dominio público; añadir contexto templario e histórico.
+3,carlota-de-mexico,Carlota: la emperatriz que enloqueció,MX,HECHO,1866-1927,99,147947,177505,2403091,12,5,5,5,1,,cronologica,8.8,PENDIENTE,Alta demanda y buen material de archivo.
+4,juana-la-loca,Juana la Loca: el viaje con el ataúd,ES,HECHO,1506-1555,470,355792,41556,1448397,6,4,3,5,1,,cronologica,8.7,PENDIENTE,"Muy tratado: ángulo diferenciado (Tordesillas, 46 años de encierro)."
+5,brujas-zugarramurdi,Las brujas de Zugarramurdi y el auto de fe de Logroño,ES,HECHO+LEYENDA,1609-1614,416,33500,22035,1683225,3,3,2,5,2,Halloween,cronologica,8.6,PENDIENTE,Informes de Alonso de Salazar Frías; Caro Baroja.
+6,la-llorona,La Llorona antes de la Llorona: Cihuacóatl y los presagios,MX,LEYENDA,prehispánico-colonial,500,270435,694868,81030199,14,5,5,4,2,Día de Muertos,investigacion,8.6,PENDIENTE,"Saturación máxima: solo con ángulo documental (Sahagún, códices)."
+7,nahual,El nahual: brujos que se convierten en animales,MX,LEYENDA,prehispánico-actual,500,72082,171872,1670621,13,4,5,4,1,Día de Muertos,investigacion,8.4,PENDIENTE,Saturado en relatos; diferenciar con fuentes etnohistóricas.
+8,el-silbon,El Silbón,VE,LEYENDA,tradición,150,123853,2742946,31199509,8,5,4,3,2,Halloween,testimonio,8.4,PENDIENTE,Saturación máxima; la leyenda incluye parricidio: sugerencia.
+9,recta-provincia,La Recta Provincia: el juicio a los brujos de Chiloé,CL,HECHO+LEYENDA,1880-1881,145,13248,10249,153261,1,2,1,5,2,Halloween,investigacion,8.2,PENDIENTE,Hueco: expediente judicial real y poca cobertura en vídeo largo.
+10,charro-negro,El Charro Negro: el jinete que cobra las deudas,MX,LEYENDA,tradición (s. XIX-XX),150,50293,1302873,9884853,7,4,4,3,1,Día de Muertos,testimonio,8.2,PENDIENTE,Muy demandada y saturada: ángulo de origen (pactos con el diablo en la tradición novohispana).
+11,guatavita-el-dorado,Guatavita: la laguna que guardaba El Dorado,CO,HECHO+LEYENDA,1537-1910,116,21786,38108,549563,4,3,3,5,1,,cronologica,8.0,PENDIENTE,"Intentos de desecación documentados (Sepúlveda, Contractors Ltd.)."
+12,santa-compana,La Santa Compaña: la procesión de los muertos,ES,LEYENDA,tradición (docs. s. XIX-XX),150,27459,13282,1839054,4,3,3,3,1,Halloween/Samaín,testimonio,7.8,PENDIENTE,"Fuentes etnográficas (Risco, Taboada Chivite)."
+13,felicitas-guerrero,Felicitas Guerrero y su fantasma,AR,HECHO+LEYENDA,1872,154,43983,30532,247588,1,4,1,4,3,,in_media_res,7.8,PENDIENTE,Feminicidio histórico: sin detalle; foco en la leyenda posterior.
+14,palacio-de-linares,El Palacio de Linares y la niña Raimunda,ES,HECHO+LEYENDA,1873-1900 (leyenda s. XX),150,16213,7632,73242,0,2,1,3,1,Halloween,investigacion,7.7,PENDIENTE,Contrastar la leyenda con archivos: ¿existió Raimunda?
+15,la-patasola,La Patasola,CO,LEYENDA,tradición,150,29924,237362,20426868,9,4,4,3,2,Halloween,testimonio,7.7,PENDIENTE,Muy demandada y saturada.
+16,difunta-correa,La Difunta Correa,AR,LEYENDA,c. 1840,185,74995,9105,920199,3,3,2,3,1,Semana Santa,cronologica,7.7,PENDIENTE,Religiosidad popular: respeto a devotos.
+17,lobizon,El lobizón y el padrinazgo presidencial,AR,LEYENDA+HECHO,tradición / costumbre 1907,119,25483,673,11217,0,2,1,3,1,Halloween,investigacion,7.7,PENDIENTE,Hueco: poca oferta en vídeo largo; verificar el origen del padrinazgo.
+18,la-sayona,La Sayona,VE,LEYENDA,tradición,150,56407,69113,3264668,9,4,4,3,2,Halloween,testimonio,7.7,PENDIENTE,"La leyenda incluye un crimen doméstico: sugerencia, sin detalle."
+19,romasanta-hombre-lobo-allariz,Romasanta: el hombre lobo que fue juzgado en Allariz,ES,HECHO+LEYENDA,1852-1853,173,38885,1178,350252,2,2,2,5,3,Halloween,investigacion,7.4,PENDIENTE,"Causa judicial conservada; no describir los crímenes, centrarse en el juicio y la licantropía clínica."
+20,noche-triste,La Noche Triste,MX,HECHO,1520,506,75040,28781,3136901,8,4,4,5,3,,in_media_res,7.4,PENDIENTE,Violencia bélica: narrar sin detalle gráfico.
+21,fiebre-amarilla-1871,La fiebre amarilla que vació Buenos Aires,AR,HECHO,1871,155,10402,3502,833528,1,2,1,5,2,,cronologica,7.4,PENDIENTE,
+22,el-sombreron,El Sombrerón,GT,LEYENDA,tradición,150,35077,62583,1458828,8,4,4,3,1,,testimonio,7.4,PENDIENTE,
+23,cantuna,Cantuña y el pacto con el diablo,EC,LEYENDA,leyenda s. XVI,450,19104,91395,1264012,10,4,4,3,1,,in_media_res,7.4,PENDIENTE,Sin artículo propio; la iglesia de San Francisco sí está documentada.
+24,cerro-rico-potosi,Potosí: la montaña que come hombres,BO,HECHO,1545-1825,300,22519,48941,1215814,7,4,4,5,3,,cronologica,7.4,PENDIENTE,"La mita: tono documental, sin detalle morboso."
+25,el-cadejo,El Cadejo,SV/GT,LEYENDA,tradición,150,69518,130133,1896856,9,4,4,3,1,,testimonio,7.4,PENDIENTE,
+26,pishtaco,El pishtaco: el ladrón de grasa de los Andes,PE,LEYENDA,colonial-actual,400,11423,13327,442465,6,2,3,4,2,Halloween,investigacion,7.1,PENDIENTE,Lectura histórica (miedo al extranjero colonial).
+27,inquisicion-de-lima,Los secretos de la Inquisición de Lima,PE,HECHO,1570-1820,206,5757,111235,4696521,10,3,4,5,3,Semana Santa,investigacion,7.1,PENDIENTE,Tortura: mencionar sin describir. Fuente: J. T. Medina (1887).
+28,galeon-san-jose,El galeón San José: el naufragio más rico de la historia,CO,HECHO,1708,318,21800,4061,191051,3,2,2,5,2,,in_media_res,7.1,PENDIENTE,Batalla naval con muertes: sin detalle. Disputa legal actual sobre el pecio: solo mención factual.
+29,madremonte,La Madremonte,CO,LEYENDA,tradición,150,16269,37370,2566960,5,3,3,3,1,,testimonio,7.0,PENDIENTE,
+30,luz-mala,La luz mala,AR,LEYENDA,tradición,150,17335,11337,1334049,4,3,3,3,1,,investigacion,7.0,PENDIENTE,Explicaciones científicas vs tradición.
+31,lagarto-de-la-malena,El Lagarto de la Malena,ES,LEYENDA,leyenda (s. XVI-XVII),400,10696,619,7202,0,2,1,3,1,,testimonio,6.9,PENDIENTE,Baja demanda: candidato a recopilación de leyendas andaluzas.
+32,agotes,Los agotes: el pueblo maldito del Pirineo,ES,HECHO,s. XI-XIX,200,26984,4491,178962,1,2,1,4,2,,investigacion,6.9,PENDIENTE,"Discriminación histórica: tono respetuoso, sin sensacionalismo."
+33,reina-regente-1895,El Reina Regente: el crucero que se tragó el Estrecho,ES,HECHO+ESPECULACION,1895,131,5480,1060,86861,0,2,1,4,2,,investigacion,6.9,PENDIENTE,"Hueco claro: 412 desaparecidos, pecio nunca identificado con certeza. Tragedia colectiva sin detalle macabro."
+34,basajaun,"Basajaun, el señor del bosque",ES,LEYENDA,tradición (Barandiarán s. XX),100,14923,862,769924,2,2,2,3,1,San Juan,testimonio,6.8,PENDIENTE,Posible serie de mitología vasca.
+35,callejon-del-beso,El Callejón del Beso de Guanajuato,MX,LEYENDA,leyenda colonial,250,,15219,2634437,3,3,2,2,1,,testimonio,6.8,PENDIENTE,Sin artículo en Wikipedia: documentación débil.
+36,crimen-calle-fuencarral,El crimen de la calle Fuencarral,ES,HECHO,1888,138,8135,413,326075,2,2,2,5,3,,investigacion,6.6,PENDIENTE,Primer juicio mediático de España; crónicas de Galdós.
+37,peste-sevilla-1649,La gran peste de Sevilla de 1649,ES,HECHO,1649,377,4597,861,8321256,1,1,1,4,2,Semana Santa,cronologica,6.6,PENDIENTE,Murió casi la mitad de la ciudad; contexto de la procesión del Cristo de San Agustín.
+38,la-mano-negra,La Mano Negra: la sociedad secreta que aterró Andalucía,ES,HECHO+ESPECULACION,1882-1884,143,15389,835,1318494,3,2,2,4,2,,investigacion,6.6,PENDIENTE,Debate historiográfico: ¿existió o fue montaje? Ideal para plantilla investigación.
+39,mulata-de-cordoba,La Mulata de Córdoba y la Inquisición,MX,LEYENDA,leyenda s. XVII,380,3781,6247,820544,2,2,2,3,1,,in_media_res,6.6,PENDIENTE,
+40,pombero,El Pombero,PY,LEYENDA,tradición,150,63946,187131,5225131,14,4,5,3,2,,testimonio,6.6,PENDIENTE,Evitar las versiones con connotación sexual.
+41,don-juan-manuel,Don Juan Manuel: ¿qué hora es?,MX,HECHO+LEYENDA,1636-1641,385,,336,232837,1,1,1,3,2,Día de Muertos,in_media_res,6.5,PENDIENTE,Personaje histórico real; leyenda recogida por Valle-Arizpe.
+42,el-mohan,El Mohán del río Magdalena,CO,LEYENDA,tradición,150,14929,10517,1592985,5,2,3,3,1,San Juan,testimonio,6.5,PENDIENTE,Fiestas de San Juan y San Pedro (Tolima/Huila).
+43,caleuche,"El Caleuche, el barco fantasma de Chiloé",CL,LEYENDA,tradición,150,13045,19598,3140896,7,2,4,4,1,,testimonio,6.5,PENDIENTE,
+44,principe-de-asturias-1916,El Titanic español: el naufragio del Príncipe de Asturias,ES,HECHO,1916,110,5123,687,271285,1,2,1,4,3,,in_media_res,6.4,PENDIENTE,Hueco claro: poca cobertura en vídeo; tragedia colectiva sin detalle macabro.
+45,hombre-del-saco,El hombre del saco: el miedo que asustó a generaciones,ES,LEYENDA+HECHO,s. XIX-1910,116,20541,11601,875257,3,3,2,4,4,,investigacion,6.3,PENDIENTE,El caso de Gádor (1910) tiene víctima infantil: tratarlo solo como mención breve sin detalle o descartarlo. Enfoque folclórico.
+46,cueva-de-hercules,La Cueva de Hércules y la caída del reino visigodo,ES,LEYENDA,leyenda (s. VIII / crónicas s. XIII),1300,3612,524,76024,0,1,1,3,1,,cronologica,6.2,PENDIENTE,Leyenda de la casa cerrada de Toledo y don Rodrigo.
+47,la-tatuana,La Tatuana: la bruja que escapó en un barco pintado,GT,LEYENDA,leyenda colonial (s. XVII),350,,1560,491403,1,1,1,3,1,,in_media_res,6.2,PENDIENTE,"Sin artículo propio en Wikipedia; recogida por Miguel Ángel Asturias (1930, obra aún con derechos: no citar texto literal)."
+48,sacamantecas-vitoria,El Sacamantecas de Vitoria,ES,HECHO,1870-1879,147,19181,1344,72294,0,2,1,4,4,,cronologica,5.9,PENDIENTE,Víctimas mujeres y violencia sexual: elipsis total; enfoque en la investigación policial del XIX.
+49,crimen-expreso-andalucia,El crimen del Expreso de Andalucía,ES,HECHO,1924,102,4247,997,466094,2,1,2,5,3,,in_media_res,5.9,PENDIENTE,Hemeroteca abundante; último garrote vil mediático.
+50,tunche,El Tunche de la Amazonía,PE,LEYENDA,tradición,150,,4250,5647608,4,2,3,2,1,,testimonio,5.8,PENDIENTE,Sin artículo en Wikipedia: documentación débil.
