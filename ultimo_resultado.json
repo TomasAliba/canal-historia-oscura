@@ -1,0 +1,14 @@
+{
+ "slug": "carlos-ii-hechizado",
+ "video_id": null,
+ "estado": "ERROR",
+ "uso": {
+  "llamadas_claude": 0,
+  "turnos_claude": 0,
+  "caracteres_tts": 0
+ },
+ "motivos": [
+  "ErrorClaude: investigador: agotados 3 intentos. Último error: success: Not logged in · Please run /login"
+ ],
+ "coste": 0
+}

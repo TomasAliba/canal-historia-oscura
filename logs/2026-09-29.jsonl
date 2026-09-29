@@ -1,0 +1,6 @@
+{"ts": "2026-09-29T06:05:42+00:00", "nivel": "info", "evento": "inicio", "slug": "carlos-ii-hechizado", "estado": "PENDIENTE", "simulado": false}
+{"ts": "2026-09-29T06:05:43+00:00", "nivel": "warning", "evento": "claude_reintento", "agente": "investigador", "intento": 1, "error": "success: Not logged in · Please run /login"}
+{"ts": "2026-09-29T06:06:13+00:00", "nivel": "warning", "evento": "claude_reintento", "agente": "investigador", "intento": 2, "error": "success: Not logged in · Please run /login"}
+{"ts": "2026-09-29T06:07:14+00:00", "nivel": "warning", "evento": "claude_reintento", "agente": "investigador", "intento": 3, "error": "success: Not logged in · Please run /login"}
+{"ts": "2026-09-29T06:07:14+00:00", "nivel": "error", "evento": "error", "slug": "carlos-ii-hechizado", "estado": "PENDIENTE", "error": "ErrorClaude: investigador: agotados 3 intentos. Último error: success: Not logged in · Please run /login"}
+{"ts": "2026-09-29T06:07:14+00:00", "nivel": "warning", "evento": "telegram_sin_configurar", "texto": "⚠️ Fallo del pipeline: ErrorClaude: investigador: agotados 3 intentos. Último error: success: Not logged in · Please run /login"}
