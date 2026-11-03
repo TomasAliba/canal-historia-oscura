@@ -1,0 +1,7 @@
+{"ts": "2026-11-03T13:13:31+00:00", "nivel": "info", "evento": "inicio", "slug": "monte-de-las-animas", "estado": "PENDIENTE", "simulado": false}
+{"ts": "2026-11-03T13:13:31+00:00", "nivel": "warning", "evento": "claude_reintento", "agente": "investigador", "intento": 1, "error": "success: Not logged in · Please run /login"}
+{"ts": "2026-11-03T13:14:02+00:00", "nivel": "warning", "evento": "claude_reintento", "agente": "investigador", "intento": 2, "error": "success: Not logged in · Please run /login"}
+{"ts": "2026-11-03T13:15:02+00:00", "nivel": "warning", "evento": "claude_reintento", "agente": "investigador", "intento": 3, "error": "success: Not logged in · Please run /login"}
+{"ts": "2026-11-03T13:15:02+00:00", "nivel": "info", "evento": "estado", "slug": "monte-de-las-animas", "estado": "BLOQUEADO"}
+{"ts": "2026-11-03T13:15:02+00:00", "nivel": "error", "evento": "error", "slug": "monte-de-las-animas", "estado": "BLOQUEADO", "error": "ErrorClaude: investigador: agotados 3 intentos. Último error: success: Not logged in · Please run /login"}
+{"ts": "2026-11-03T13:15:02+00:00", "nivel": "warning", "evento": "telegram_sin_configurar", "texto": "⚠️ Fallo del pipeline: ErrorClaude: investigador: agotados 3 intentos. Último error: success: Not logged in · Please run /login"}
